@@ -52,3 +52,7 @@ adb uninstall com.example.samsungweatherwidget
 - minSdk: 26
 
 天气数据来自 Open-Meteo，无需 API Key。
+
+
+## One UI Glass B variant
+This package uses a transparent widget canvas with a minimalist semi-transparent dark glass card. The old mountain illustration is not used in the widget layout.

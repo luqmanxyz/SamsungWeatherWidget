@@ -2,13 +2,8 @@
 <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@android:color/transparent"
     android:padding="6dp">
-
-    <ImageView
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:scaleType="centerCrop"
-        android:src="@drawable/widget_scene" />
 
     <LinearLayout
         android:id="@+id/widgetRoot"
@@ -16,7 +11,7 @@
         android:layout_height="match_parent"
         android:background="@drawable/widget_panel"
         android:orientation="vertical"
-        android:padding="14dp">
+        android:padding="16dp">
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -36,7 +31,7 @@
                     android:layout_height="wrap_content"
                     android:text="Good Morning"
                     android:textColor="#FFFFFFFF"
-                    android:textSize="22sp"
+                    android:textSize="23sp"
                     android:textStyle="bold" />
 
                 <TextView
@@ -45,24 +40,24 @@
                     android:layout_height="wrap_content"
                     android:layout_marginTop="2dp"
                     android:text="Wednesday, Oct 7, 2026"
-                    android:textColor="#E8FFFFFF"
+                    android:textColor="#D9FFFFFF"
                     android:textSize="12sp" />
             </LinearLayout>
 
             <TextView
                 android:id="@+id/weatherIcon"
-                android:layout_width="54dp"
-                android:layout_height="54dp"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
                 android:gravity="center"
                 android:text="☀"
-                android:textColor="#FFFFD34E"
-                android:textSize="38sp" />
+                android:textColor="#FFFFD24A"
+                android:textSize="34sp" />
         </LinearLayout>
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="6dp"
+            android:layout_marginTop="8dp"
             android:orientation="horizontal">
             <TextView android:id="@+id/dow1" style="@style/WidgetDow" />
             <TextView android:id="@+id/dow2" style="@style/WidgetDow" />
@@ -75,7 +70,7 @@
 
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="32dp"
+            android:layout_height="34dp"
             android:orientation="horizontal">
             <TextView android:id="@+id/day1" style="@style/WidgetDay" />
             <TextView android:id="@+id/day2" style="@style/WidgetDay" />
@@ -90,7 +85,7 @@
             android:layout_width="match_parent"
             android:layout_height="0dp"
             android:layout_weight="1"
-            android:gravity="bottom"
+            android:gravity="bottom|center_vertical"
             android:orientation="horizontal">
 
             <LinearLayout
@@ -106,14 +101,14 @@
                     android:includeFontPadding="false"
                     android:text="26°"
                     android:textColor="#FFFFFFFF"
-                    android:textSize="52sp"
+                    android:textSize="54sp"
                     android:textStyle="bold" />
 
                 <TextView
                     android:id="@+id/conditionText"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Clear Sky Day"
+                    android:text="Clear"
                     android:textColor="#FFFFFFFF"
                     android:textSize="16sp" />
 
@@ -121,10 +116,10 @@
                     android:id="@+id/detailsText"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_marginTop="2dp"
+                    android:layout_marginTop="3dp"
                     android:maxLines="2"
                     android:text="Feels like 28° · Humidity 94% · Wind 1.5 m/s"
-                    android:textColor="#E8FFFFFF"
+                    android:textColor="#CCFFFFFF"
                     android:textSize="11sp" />
 
                 <TextView
@@ -133,7 +128,7 @@
                     android:layout_height="wrap_content"
                     android:layout_marginTop="2dp"
                     android:text="Abu Dhabi"
-                    android:textColor="#CCFFFFFF"
+                    android:textColor="#BFFFFFFF"
                     android:textSize="10sp" />
             </LinearLayout>
 
@@ -142,8 +137,8 @@
                 android:layout_height="wrap_content"
                 android:gravity="bottom"
                 android:text="❞"
-                android:textColor="#FFFFFFFF"
-                android:textSize="38sp"
+                android:textColor="#EFFFFFFF"
+                android:textSize="36sp"
                 android:textStyle="bold" />
         </LinearLayout>
     </LinearLayout>
