@@ -1,0 +1,26 @@
+<resources>
+    <style name="AppTheme" parent="android:style/Theme.Material.Light.NoActionBar">
+        <item name="android:fontFamily">sans</item>
+        <item name="android:colorAccent">#168AF7</item>
+        <item name="android:navigationBarColor">#0B1738</item>
+        <item name="android:statusBarColor">#0B1738</item>
+    </style>
+
+    <style name="WidgetDow">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textColor">#CCFFFFFF</item>
+        <item name="android:textSize">9sp</item>
+    </style>
+    <style name="WidgetDay">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">30dp</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textColor">#FFFFFFFF</item>
+        <item name="android:textSize">12sp</item>
+        <item name="android:background">@drawable/date_chip</item>
+    </style>
+</resources>

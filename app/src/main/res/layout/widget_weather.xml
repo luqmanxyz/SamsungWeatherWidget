@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="6dp">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"
+        android:src="@drawable/widget_scene" />
+
+    <LinearLayout
+        android:id="@+id/widgetRoot"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/widget_panel"
+        android:orientation="vertical"
+        android:padding="14dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/greetingText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Good Morning"
+                    android:textColor="#FFFFFFFF"
+                    android:textSize="22sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/dateText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="2dp"
+                    android:text="Wednesday, Oct 7, 2026"
+                    android:textColor="#E8FFFFFF"
+                    android:textSize="12sp" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/weatherIcon"
+                android:layout_width="54dp"
+                android:layout_height="54dp"
+                android:gravity="center"
+                android:text="☀"
+                android:textColor="#FFFFD34E"
+                android:textSize="38sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="6dp"
+            android:orientation="horizontal">
+            <TextView android:id="@+id/dow1" style="@style/WidgetDow" />
+            <TextView android:id="@+id/dow2" style="@style/WidgetDow" />
+            <TextView android:id="@+id/dow3" style="@style/WidgetDow" />
+            <TextView android:id="@+id/dow4" style="@style/WidgetDow" />
+            <TextView android:id="@+id/dow5" style="@style/WidgetDow" />
+            <TextView android:id="@+id/dow6" style="@style/WidgetDow" />
+            <TextView android:id="@+id/dow7" style="@style/WidgetDow" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="32dp"
+            android:orientation="horizontal">
+            <TextView android:id="@+id/day1" style="@style/WidgetDay" />
+            <TextView android:id="@+id/day2" style="@style/WidgetDay" />
+            <TextView android:id="@+id/day3" style="@style/WidgetDay" />
+            <TextView android:id="@+id/day4" style="@style/WidgetDay" />
+            <TextView android:id="@+id/day5" style="@style/WidgetDay" />
+            <TextView android:id="@+id/day6" style="@style/WidgetDay" />
+            <TextView android:id="@+id/day7" style="@style/WidgetDay" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:gravity="bottom"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/tempText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:includeFontPadding="false"
+                    android:text="26°"
+                    android:textColor="#FFFFFFFF"
+                    android:textSize="52sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/conditionText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Clear Sky Day"
+                    android:textColor="#FFFFFFFF"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/detailsText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="2dp"
+                    android:maxLines="2"
+                    android:text="Feels like 28° · Humidity 94% · Wind 1.5 m/s"
+                    android:textColor="#E8FFFFFF"
+                    android:textSize="11sp" />
+
+                <TextView
+                    android:id="@+id/locationText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="2dp"
+                    android:text="Abu Dhabi"
+                    android:textColor="#CCFFFFFF"
+                    android:textSize="10sp" />
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="bottom"
+                android:text="❞"
+                android:textColor="#FFFFFFFF"
+                android:textSize="38sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+    </LinearLayout>
+</FrameLayout>

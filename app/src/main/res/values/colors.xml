@@ -1,0 +1,6 @@
+<resources>
+    <color name="white">#FFFFFFFF</color>
+    <color name="text_secondary">#E8FFFFFF</color>
+    <color name="accent">#FF168AF7</color>
+    <color name="panel">#5A0B1738</color>
+</resources>

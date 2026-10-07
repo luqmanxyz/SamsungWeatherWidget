@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#0B1738">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="24dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Samsung Weather Widget"
+            android:textColor="#FFFFFFFF"
+            android:textSize="28sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:text="玻璃拟态天气桌面组件。首次使用建议点“使用当前位置”，然后回到桌面添加 4×2 Widget。天气数据来自 Open-Meteo，无需 API Key。"
+            android:textColor="#CCFFFFFF"
+            android:textSize="16sp" />
+
+        <EditText
+            android:id="@+id/editCity"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="26dp"
+            android:hint="城市名称，例如 Abu Dhabi"
+            android:inputType="textCapWords"
+            android:textColor="#FFFFFFFF"
+            android:textColorHint="#88FFFFFF" />
+
+        <EditText
+            android:id="@+id/editLat"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Latitude 纬度"
+            android:inputType="numberDecimal|numberSigned"
+            android:textColor="#FFFFFFFF"
+            android:textColorHint="#88FFFFFF" />
+
+        <EditText
+            android:id="@+id/editLon"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Longitude 经度"
+            android:inputType="numberDecimal|numberSigned"
+            android:textColor="#FFFFFFFF"
+            android:textColorHint="#88FFFFFF" />
+
+        <Button
+            android:id="@+id/buttonLocation"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="18dp"
+            android:background="@drawable/button_bg"
+            android:text="使用当前位置"
+            android:textColor="#FFFFFFFF" />
+
+        <Button
+            android:id="@+id/buttonSave"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:background="@drawable/button_bg"
+            android:text="保存并刷新 Widget"
+            android:textColor="#FFFFFFFF" />
+
+        <TextView
+            android:id="@+id/statusText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="18dp"
+            android:textColor="#CCFFFFFF"
+            android:textSize="14sp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="28dp"
+            android:text="添加方法：长按三星桌面 → 小组件 → Samsung Weather Widget → 拖到桌面。建议尺寸 4×2 或 5×2。"
+            android:textColor="#AAFFFFFF"
+            android:textSize="14sp" />
+    </LinearLayout>
+</ScrollView>
